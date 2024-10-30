@@ -1,27 +1,114 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="es">
 
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+<include src="./_header.html"></include>
+
+<body>
+    <header>
+        <include src="./_header_img.html"></include>
+    </header>
+
+    <section>
+        <main>
+
+            <h1>La Masia Freixa, modernisme a Terrassa</h1>
+
+            <div class="row">
+                <div class="rowimg">
+                    <picture>
+                        <source media="(min-width: 840px)" srcset="./assets/images/masia-freixa-terrassa.jpg"
+                            style="width: 100%;  " />
+                        <source media="(min-width: 480px) and (max-width: 839px)"
+                            srcset="./assets/images/masia-freixa-terrassa.jpg" style="width: 100%;" />
+                        <img src="./assets/images/masia-freixa-terrassa.jpg" class="img-detall" alt="header image"
+                            loading="lazy" />
+                    </picture>
+                </div>
+                <div class="rowcont">
+                    <h2>Història</h2>
+                    <p>
+                        La Masia Freixa és un edifici modernista de la ciutat de Terrassa situat al parc de Sant Jordi,
+                        antics jardins i terreny adjacent a la masia, ubicat al barri de Ca n'Aurell. Construïda el
+                        1896, va ser pensada originalment com a fàbrica de filats i va ser reformada entre el 1907 i el
+                        1914 per Lluís Muncunill i Parellada, que la va transformar en la residència familiar de
+                        l'industrial tèxtil Josep Freixa. L'arquitecte la va convertir en una de les joies del
+                        modernisme terrassenc, amb la seva estructura d'arcs i voltes d'inspiració gaudiniana i els murs
+                        pintats de blanc, d'on sobresurt una alta torre.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row2">
+                <div class="rowcont">
+                    <h2>Lluís Muncunill</h2>
+                    <p>
+                        Lluís Muncunill i Parellada (Fals, 25 de febrer de 1868 - Terrassa, 25 d'abril de 1931) fou un
+                        arquitecte modernista català. Va desenvolupar la seva activitat principal a Terrassa, on és un
+                        referent en l'aplicació de l'estil modernista a l'arquitectura industrial. Entre el 1892 i el
+                        1903 en va ser arquitecte municipal i fou el més prolífic que ha tingut la ciutat, on ha deixat
+                        edificis per a usos diversos i va definir noves tipologies d'edificis industrials. La varietat
+                        constructiva li va permetre configurar la imatge urbana de la Terrassa modernista.
+                    </p>
+                </div>
+                <div class="rowimg">
+                    <picture>
+                        <source media="(min-width: 840px)" srcset="./assets/images/lluismuncunill.jpg"
+                            style="width: 100%;  " />
+                        <source media="(min-width: 480px) and (max-width: 839px)"
+                            srcset="/src/assets/images/lluismuncunill.jpg" style="width: 100%;" />
+                        <img src="/src/assets/images/lluismuncunill.jpg" class="img-detall" alt="header image"
+                            loading="lazy" />
+                    </picture>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="rowimg">
+                    <picture>
+                        <source media="(min-width: 840px)" srcset="./assets/images/modernisme.jpg"
+                            style="width: 100%;  " />
+                        <source media="(min-width: 480px) and (max-width: 839px)"
+                            srcset="/src/assets/images/modernisme.jpg" style="width: 100%;" />
+                        <img src="/src/assets/images/modernisme.jpg" class="img-detall" alt="header image"
+                            loading="lazy" />
+                    </picture>
+                </div>
+                <div class="rowcont">
+                    <h2>Modernisme</h2>
+                    <p>
+                        El modernisme va ser un moviment cultural, literari i artístic produït a Occident a la fi del
+                        segle XIX i al començament del segle XX. El modernisme es coneix en altres països com a Art
+                        Nouveau (França i Bèlgica), Modern Style (a Anglaterra), Tiffany (als Estats Units), Jugendstil
+                        (a Alemanya), Sezessionstil o Wiener Sezession (a Àustria), Stile '900, Floreale o Liberty (a
+                        Itàlia). En art, tot i que a Catalunya té un sentit molt més ampli, va tenir incidència sobretot
+                        en l'arquitectura i les arts decoratives. Si bé existeix certa relació que permet reconèixer
+                        trets comuns en aquests estils, en cada país es va desenvolupar amb característiques
+                        distintives.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row2">
+                <div class="rowcont">
+                    <h2>Terrassa</h2>
+                    <p>
+                        Terrassa és una ciutat de Catalunya ubicada al Vallès Occidental que, juntament amb Sabadell,
+                        exerceix la capitalitat de la comarca. L'any 2005 va comportar per a la ciutat arribar a la
+                        xifra de 200.000 habitants. El cens de 2021 hi recull un nombre d'habitants de 223.011, per la
+                        qual cosa és la ciutat més poblada del Vallès Occidental i la tercera de Catalunya.
+                    </p>
+                </div>
+                <div class="rowimg">
+                    <picture>
+                        <source media="(min-width: 840px)" srcset="./assets/images/terrassa.jpg" />
+                        <source media="(min-width: 480px) and (max-width: 839px)" srcset="./assets/images/terrassa.jpg"
+                            style="width: 100%;" />
+                        <img src="./assets/images/terrassa.jpg" class="img-detall" alt="header image" loading="lazy" />
+                    </picture>
+                </div>
+            </div>
+        </main>
+        <include src="./_footer.html"></include>
+</body>
+
 </html>
